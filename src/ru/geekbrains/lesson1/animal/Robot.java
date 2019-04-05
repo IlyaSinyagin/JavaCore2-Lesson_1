@@ -9,11 +9,18 @@ import ru.geekbrains.lesson1.Participant;
 public class Robot implements Participant {
 
     private boolean isOnDistance;
+    private int runDistance;
+    private int jumpHeight;
+    private int swimDistance;
 
     private String name;
 
-    public Robot(String name) {
+    public Robot(String name, int runDistance, int jumpHeight, int swimDistance) {
         this.name = name;
+        this.isOnDistance = true;
+        this.runDistance = runDistance;
+        this.jumpHeight = jumpHeight;
+        this.swimDistance = swimDistance;
     }
 
     @Override
@@ -23,22 +30,39 @@ public class Robot implements Participant {
 
     @Override
     public void run(int distance) {
+        if (!isOnDistance) {
+            return;
+        }
+        if (distance > runDistance) {
+            isOnDistance = false;
+        }
+        System.out.println(String.format("Робот %s пробежал кросс длиной %d", name, distance));
         // TODO доработать по аналогии с классами животных
     }
 
     @Override
     public void jump(int height) {
+        if (!isOnDistance) {
+            return;
+        }
+        if (height > jumpHeight) {
+            isOnDistance = false;
+            return;
+        }
+        System.out.println(String.format("Робот %s прыгнул в высоту на %d", name, height));
         // TODO доработать по аналогии с классами животных
     }
 
     @Override
     public void swim(int distance) {
+        isOnDistance = false;
+        System.out.println("Данный робот не умеет плавать");
         // TODO доработать по аналогии с классами животных
     }
 
     @Override
     public void getResult() {
-        System.out.println(String.format("Кошка %s %sпрошла полосу препятствий",
-                name, isOnDistance ? "" : " не"));
+            System.out.println(String.format("Робот %s %s прошел полосу препятствий",
+                    name, isOnDistance ? "" : " не"));
     }
 }

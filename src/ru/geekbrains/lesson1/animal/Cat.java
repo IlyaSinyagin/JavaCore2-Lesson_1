@@ -8,8 +8,9 @@ public class Cat extends Animal implements Participant {
     private boolean isOnDistance;
     private int runDistance;
     private int jumpHeight;
+    int swimDistance;
 
-    public Cat(String name, Color color, int age, int runDistance, int jumpHeight) {
+    public Cat(String name, Color color, int age, int runDistance, int jumpHeight, int swimDistance) {
         super(name, color, age);
 
         // так делать не желательно
@@ -18,6 +19,7 @@ public class Cat extends Animal implements Participant {
         this.isOnDistance = true;
         this.runDistance = runDistance;
         this.jumpHeight = jumpHeight;
+        this.swimDistance = swimDistance;
     }
 
     public Cat(String name, Color color) {
@@ -55,7 +57,8 @@ public class Cat extends Animal implements Participant {
             isOnDistance = false;
             return;
         }
-        System.out.println(String.format("Собака %s пругнула на высоту %d", getName(), height));
+        System.out.println(String.format("Кошка %s пругнула на высоту %d", getName(), height));
+        return;
     }
 
     @Override
@@ -67,7 +70,7 @@ public class Cat extends Animal implements Participant {
 
     @Override
     public void getResult() {
-        System.out.println(String.format("Кошка %s прошла%s полосу препятствий",
+        System.out.println(String.format("Кошка %s прошла %s полосу препятствий",
                 getName(), isOnDistance ? "" : " не"));
     }
 
