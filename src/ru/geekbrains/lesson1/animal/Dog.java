@@ -73,7 +73,8 @@ public class Dog extends Animal implements Participant {
 
     @Override
     public void getResult() {
-        System.out.println(String.format("Кошка %s %sпрошла полосу препятствий",
+        System.out.println();
+        System.out.println(String.format("Собака %s %s прошла полосу препятствий",
                 getName(), isOnDistance ? "" : " не"));
     }
 }

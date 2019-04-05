@@ -70,14 +70,15 @@ public class Cat extends Animal implements Participant {
 
     @Override
     public void getResult() {
-        System.out.println(String.format("Кошка %s прошла %s полосу препятствий",
+        System.out.println();
+        System.out.println(String.format("Кошка %s %s прошла  полосу препятствий",
                 getName(), isOnDistance ? "" : " не"));
     }
 
-    @Override
-    public String getName() {
-        return "Кошка " + super.getName();
-    }
+//    @Override
+//    public String getName() {
+//        return "Кошка " + super.getName();
+//    }
 
     public void setRunDistance(int runDistance) {
         this.runDistance = runDistance;

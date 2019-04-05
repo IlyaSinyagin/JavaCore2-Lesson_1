@@ -33,6 +33,7 @@ public class Application {
         );
 
         course.doIt(team);
+        team.getResults();
 
 
     }

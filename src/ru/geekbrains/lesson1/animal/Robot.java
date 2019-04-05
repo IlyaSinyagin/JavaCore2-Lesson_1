@@ -62,7 +62,8 @@ public class Robot implements Participant {
 
     @Override
     public void getResult() {
-            System.out.println(String.format("Робот %s %s прошел полосу препятствий",
+        System.out.println();
+        System.out.println(String.format("Робот %s %s прошел полосу препятствий",
                     name, isOnDistance ? "" : " не"));
     }
 }
