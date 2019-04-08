@@ -43,7 +43,6 @@ public class Dog extends Animal implements Participant {
             isOnDistance = false;
         }
         System.out.println(String.format("Собака %s пробежала кросс длиной %d", getName(),distance));
-        // TODO доработать по аналогии с классом Cat
     }
 
     @Override
@@ -56,7 +55,6 @@ public class Dog extends Animal implements Participant {
             return;
         }
         System.out.println(String.format("Собака %s прыгнула в высоту на %d", getName(),height));
-        // TODO доработать по аналогии с классом Cat
     }
 
     @Override
@@ -68,7 +66,6 @@ public class Dog extends Animal implements Participant {
             isOnDistance = false;
         }
         System.out.println(String.format("Собака %s проплыла в динну %d", getName(),distance));
-        // TODO доработать по аналогии с классом Cat
     }
 
     @Override

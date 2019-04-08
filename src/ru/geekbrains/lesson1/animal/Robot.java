@@ -37,7 +37,6 @@ public class Robot implements Participant {
             isOnDistance = false;
         }
         System.out.println(String.format("Робот %s пробежал кросс длиной %d", name, distance));
-        // TODO доработать по аналогии с классами животных
     }
 
     @Override
@@ -50,14 +49,12 @@ public class Robot implements Participant {
             return;
         }
         System.out.println(String.format("Робот %s прыгнул в высоту на %d", name, height));
-        // TODO доработать по аналогии с классами животных
     }
 
     @Override
     public void swim(int distance) {
         isOnDistance = false;
         System.out.println("Данный робот не умеет плавать");
-        // TODO доработать по аналогии с классами животных
     }
 
     @Override

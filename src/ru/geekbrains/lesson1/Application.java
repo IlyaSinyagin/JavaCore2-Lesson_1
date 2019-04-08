@@ -22,7 +22,7 @@ public class Application {
                 new Dog("Фунтик", Color.BROWN, 2, 200, 19, 10),
                 new Human("Анатолий", Color.BLACK, 10, 100,11,10),
                 new Robot("C3PO", 1000, 1000, 1000)
-                // TODO здесь должны быть участники всех видов (Cat, Dog, Human, Robot)
+
         );
 
         Course course = new Course(

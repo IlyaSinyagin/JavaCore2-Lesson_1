@@ -26,7 +26,7 @@ public class Human extends Animal implements Participant {
 
     @Override
     public boolean isOnDistance() {
-        return isOnDistance; // TODO доработать по аналогии с классом Cat
+        return isOnDistance;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class Human extends Animal implements Participant {
             return;
         }
         System.out.println(String.format("Человек %s пробежал кросс длинной %d", getName(), distance));
-        // TODO доработать по аналогии с классом Cat
+
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Human extends Animal implements Participant {
             return;
         }
         System.out.println(String.format("Человек %s прыгнул в высоту %d", getName(), height));
-        // TODO доработать по аналогии с классом Cat
+
     }
 
     @Override
@@ -65,13 +65,13 @@ public class Human extends Animal implements Participant {
             return;
         }
         System.out.println(String.format("Человек %s проплыл в длинну %d", getName(), distance));
-        // TODO доработать по аналогии с классом Cat
+
     }
 
     @Override
     public void voice() {
         System.out.println("Человек говорит");
-        // TODO доработать по аналогии с классом Cat
+
     }
 
     @Override
