@@ -38,6 +38,7 @@ public class homework2 {
         }
     }
 
+
     //        Вариант №2. Подсмотрел Ваш код
 
     private Map<String, Set<String>> phonebookV2;
